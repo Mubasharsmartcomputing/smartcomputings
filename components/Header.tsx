@@ -16,7 +16,14 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Image src="/logo/image.png" alt="Smart Computing" width={120} height={100}  />
+            <Image 
+              src="/logo/image.png" 
+              alt="Smart Computing" 
+              width={120} 
+              height={100}
+              priority
+              loading="eager"
+            />
           </div>
 
           {/* Navigation */}
@@ -79,14 +86,14 @@ export default function Header() {
                   >
                     Services
                   </Link>
-                  <Link 
+                  {/* <Link 
                     href="/portfolio" 
                     className={`block px-4 py-2 hover:text-cyan-400 hover:bg-cyan-400/10 transition-colors ${pathname === '/portfolio' ? 'text-cyan-400 bg-cyan-400/10' : 'text-white'}`}
                     style={{ fontFamily: 'Inter' }}
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Portfolio
-                  </Link>
+                  </Link> */}
                   <Link 
                     href="/contact" 
                     className={`block px-4 py-2 hover:text-cyan-400 hover:bg-cyan-400/10 transition-colors ${pathname === '/contact' ? 'text-cyan-400 bg-cyan-400/10' : 'text-white'}`}

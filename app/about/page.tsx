@@ -43,7 +43,7 @@ export default function About() {
       </section>
       <AboutValues />
       <MissionVision />
-      <Testimonials />
+      
     </>
   )
 }

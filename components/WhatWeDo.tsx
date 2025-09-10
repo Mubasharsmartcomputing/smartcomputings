@@ -36,16 +36,58 @@ export default function WhatWeDo() {
 
   return (
     <div className="min-h-screen py-16 px-4 relative overflow-hidden" >
-      {/* Background Image */}
+      {/* Background Image - Large screens */}
       <div 
-        className="absolute"
+        className="absolute hidden xl:block"
         style={{
-          width: '1426.41px',
-          height: '1400px',
-          top: '-40px',
-          left: '220px',
+          width: '70vw',
+          height: '100vh',
+          top: '10%',
+          left: '15%',
           transform: 'rotate(180.4deg)',
-          zIndex: 0, // Ensure the background is behind other content
+          zIndex: 0,
+        }}
+      >
+        <Image 
+          src="/bg.png" 
+          alt="Background" 
+          layout="fill" 
+          objectFit="cover" 
+          quality={100}
+        />
+      </div>
+      
+      {/* Background Image - Laptop screens */}
+      <div 
+        className="absolute hidden lg:block xl:hidden"
+        style={{
+          width: '80vw',
+          height: '90vh',
+          top: '-2%',
+          left: '10%',
+          transform: 'rotate(180.4deg)',
+          zIndex: 0,
+        }}
+      >
+        <Image 
+          src="/bg.png" 
+          alt="Background" 
+          layout="fill" 
+          objectFit="cover" 
+          quality={100}
+        />
+      </div>
+      
+      {/* Background Image - Tablet screens */}
+      <div 
+        className="absolute hidden md:block lg:hidden"
+        style={{
+          width: '70vw',
+          height: '80vh',
+          top: '0%',
+          left: '15%',
+          transform: 'rotate(180.4deg)',
+          zIndex: 0,
         }}
       >
         <Image 

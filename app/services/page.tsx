@@ -1,4 +1,4 @@
-import Testimonials from '../../components/Testimonials'
+
 import CompanyLogos from '../../components/CompanyLogos'
 import ServiceCard from '@/components/services/ServiceCard'
 import { HowWeWorkSection } from '@/components/services/HowWeWorkSection'
@@ -44,7 +44,7 @@ export default function Services() {
       <ServiceCard/>
       <HowWeWorkSection/>
       <CompanyLogos />
-      <Testimonials />
+     
     </>
   )
 }

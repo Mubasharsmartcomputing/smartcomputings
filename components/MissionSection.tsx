@@ -2,15 +2,33 @@ import React from 'react';
 
 const MissionSection = () => {
   return (
-    <section className="bg-[#02B2E8] text-white py-16 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+
+    
+    <section className="bg-[#02B2E8]  text-white py-16 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
       {/* Background image */}
       <div 
-        className="absolute pointer-events-none"
+        className="absolute pointer-events-none hidden lg:block"
         style={{
-          width: '389.28px',
-          height: '450.4px',
-          top: '-123px',
-          left: '1455px',
+          width: '20vw',
+          height: '20vw',
+          top: '-15%',
+          right: '-2%',
+          transform: 'rotate(-105.96deg)',
+          backgroundImage: 'url(/bg.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          zIndex: 0
+        }}
+      />
+      {/* Smaller background for laptop screens */}
+      <div 
+        className="absolute pointer-events-none hidden md:block lg:hidden"
+        style={{
+          width: '20vw',
+          height: '25vw',
+          top: '-5%',
+          right: '-3%',
           transform: 'rotate(-110.96deg)',
           backgroundImage: 'url(/bg.png)',
           backgroundSize: 'cover',

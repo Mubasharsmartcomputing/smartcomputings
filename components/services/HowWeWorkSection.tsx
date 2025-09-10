@@ -148,7 +148,7 @@ export function HowWeWorkSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="relative z-20 flex flex-col justify-end items-center ml-[-50px] lg:ml-[1100px] lg:mt-60 mt-[-50px] space-x-4 mb-8">
+        <div className="relative z-20 flex flex-col justify-end items-center ml-[-54px] lg:ml-[1080px] lg:mt-56 mt-[-50px] space-x-4 mb-8">
           <div className="bg-blue-900 rounded-full p-3">
             <TrendingUp className="w-6 h-6 text-white" />
           </div>
@@ -162,7 +162,7 @@ export function HowWeWorkSection() {
                 lineHeight: '100%'
               }}
             >
-              450+
+              80+
             </div>
             <div 
               className="text-gray-600"

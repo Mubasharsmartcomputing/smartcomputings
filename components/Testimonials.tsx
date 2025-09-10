@@ -11,23 +11,23 @@ const testimonialsData = [
     image: "/testimonials/image1.png",
     name: "David",
     role: "CEO",
-    text: "Working with Smart Computing on our ERP implementation was a game-changer. Their team's expertise and support throughout the process was exceptional."
+    text: "Smart Computing transformed our business operations with their cutting-edge ERP solution. Their professional approach and technical excellence made all the difference."
   },
   {
     id: 2,
     rating: 5,
     image: "/testimonials/image2.png",
-    name: "John",
+    name: "Harper",
     role: "Lead Developer",
-    text: "Working with Smart Computing on our ERP implementation was a game-changer. Their team's expertise and support throughout the process was exceptional."
+    text: "The AI integration project exceeded our expectations. Smart Computing's innovative solutions and seamless implementation process were truly impressive."
   },
   {
     id: 3,
     rating: 5,
     image: "/testimonials/image3.png",
-    name: "Asad",
+    name: "Amelia",
     role: "Project Manager",
-    text: "Working with Smart Computing on our ERP implementation was a game-changer. Their team's expertise and support throughout the process was exceptional."
+    text: "Outstanding collaboration and delivery! Smart Computing's team understood our requirements perfectly and delivered a robust, scalable solution on schedule."
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const testimonialsData = [
     image: "/testimonials/image4.png",
     name: "Sarah",
     role: "CTO",
-    text: "Smart Computing delivered exceptional results for our digital transformation project. Their innovative approach exceeded our expectations."
+    text: "Their digital transformation expertise helped us modernize our entire infrastructure. The results have significantly improved our operational efficiency."
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const testimonialsData = [
     image: "/testimonials/image5.png",
     name: "Michael",
     role: "Product Manager",
-    text: "The team at Smart Computing provided outstanding support and delivered our project on time with excellent quality."
+    text: "Exceptional service quality and technical support throughout our project lifecycle. Smart Computing truly delivers smart solutions for complex challenges."
   }
 ];
 
@@ -135,7 +135,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <section className="py-20 bg-[#183762] relative overflow-hidden rounded-[40px] mt-20 mx-auto max-w-7xl">
+      <section className="py-20 bg-[#183762] container relative overflow-hidden rounded-[40px] mt-20 mx-auto max-w-6xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 

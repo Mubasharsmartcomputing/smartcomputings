@@ -36,14 +36,35 @@ export default function ServiceCard() {
 
   return (
    <div className="min-h-screen py-8 md:py-16 px-4 relative overflow-hidden" >
-        {/* Background Image - Hidden on mobile for better performance and readability */}
+        {/* Background Image - Large screens */}
         <div 
-          className="absolute hidden lg:block"
+          className="absolute hidden xl:block"
           style={{
-            width: '1426.41px',
-            height: '1400px',
-            top: '-40px',
-            left: '220px',
+            width: '70vw',
+            height: '100vh',
+            top: '13%',
+            left: '15%',
+            transform: 'rotate(180.4deg)',
+            zIndex: 0,
+          }}
+        >
+          <Image 
+            src="/bg.png" 
+            alt="Background" 
+            layout="fill" 
+            objectFit="cover" 
+            quality={100}
+          />
+        </div>
+        
+        {/* Background Image - Laptop screens */}
+        <div 
+          className="absolute hidden lg:block xl:hidden"
+          style={{
+            width: '80vw',
+            height: '90vh',
+            top: '-2%',
+            left: '10%',
             transform: 'rotate(180.4deg)',
             zIndex: 0,
           }}

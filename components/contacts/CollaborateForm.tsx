@@ -1,7 +1,5 @@
 "use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
 
 export default function CollaborateForm() {
   return (
@@ -17,7 +15,7 @@ export default function CollaborateForm() {
               letterSpacing: '-1.16px'
             }}
           >
-            Let's Collaborate. <span className="text-2xl md:text-[36px] lg:text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] align-middle">We're All Ears!</span>
+            <span className="text-2xl md:text-[36px] pt-2 lg:text-[55px]">Let's Collaborate.</span> <span className="text-2xl md:text-[36px] lg:text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] align-middle">We're All Ears!</span>
           </h1>
           <p 
             className="text-gray-600 max-w-2xl mx-auto"

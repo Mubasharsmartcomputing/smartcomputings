@@ -20,29 +20,29 @@ export default function CompanyLogos() {
   const carouselRightRef = useRef<HTMLDivElement>(null)
 
   const techLogosLeft = [
-    { name: "Amazon", icon: "/companyLogo/amazon.png" },
-    { name: "Microsoft", icon: "/companyLogo/microsoft.png" },
-    { name: "LinkedIn", icon: "/companyLogo/linkdin.png" },
-    { name: "Walmart", icon: "/companyLogo/walmart.png" },
-    { name: "Reddit", icon: "/companyLogo/raddit.png" },
-    { name: "Siemens", icon: "/companyLogo/siemens.png" },
-    { name: "Renault", icon: "/companyLogo/renault.png" },
-     { name: "Reddit", icon: "/companyLogo/raddit.png" },
-    { name: "Siemens", icon: "/companyLogo/siemens.png" },
-    { name: "Renault", icon: "/companyLogo/renault.png" }
+    { name: "React", icon: "/technology/react.svg" },
+    { name: "Next.js", icon: "/technology/nextjs.svg" },
+    { name: "Node.js", icon: "/technology/nodejs.svg" },
+    { name: "Python", icon: "/technology/python.svg" },
+    { name: "Java", icon: "/technology/java.svg" },
+    { name: "TypeScript", icon: "/technology/typescript.svg" },
+    { name: "AWS", icon: "/technology/aws.svg" },
+    { name: "Docker", icon: "/technology/docker.svg" },
+    { name: "Kubernetes", icon: "/technology/kubernetes.svg" },
+    { name: "MongoDB", icon: "/technology/mongodb.svg" }
   ]
 
   const techLogosRight = [
-    { name: "Reddit", icon: "/companyLogo/raddit.png" },
-    { name: "Siemens", icon: "/companyLogo/siemens.png" },
-    { name: "Renault", icon: "/companyLogo/renault.png" },
-    { name: "Amazon", icon: "/companyLogo/amazon.png" },
-    { name: "Microsoft", icon: "/companyLogo/microsoft.png" },
-    { name: "LinkedIn", icon: "/companyLogo/linkdin.png" },
-    { name: "Walmart", icon: "/companyLogo/walmart.png" },
-    { name: "Microsoft", icon: "/companyLogo/microsoft.png" },
-    { name: "LinkedIn", icon: "/companyLogo/linkdin.png" },
-    { name: "Walmart", icon: "/companyLogo/walmart.png" }
+    { name: "Angular", icon: "/technology/angular.svg" },
+    { name: "Vue.js", icon: "/technology/vue.svg" },
+    { name: "Azure", icon: "/technology/azure.svg" },
+    { name: "GCP", icon: "/technology/gcp.svg" },
+    { name: "MySQL", icon: "/technology/mysql.svg" },
+    { name: "PostgreSQL", icon: "/technology/postgresql.svg" },
+    { name: "Redis", icon: "/technology/redis.svg" },
+    { name: "Elasticsearch", icon: "/technology/elasticsearch.svg" },
+    { name: ".NET", icon: "/technology/dotnet.svg" },
+    { name: "Swift", icon: "/technology/swift.svg" }
   ]
 
   const extendedLogosLeft = [...techLogosLeft, ...techLogosLeft]
@@ -150,7 +150,7 @@ export default function CompanyLogos() {
               letterSpacing: '-1.16px'
             }}
           >
-            <div className="font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] ">Millions Of Creatives Generated Every Single Day</div>
+            <div className="font-semibold font-inter leading-[120%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] pb-1">Technology We Manage</div>
 
           </h1>
 
@@ -193,21 +193,23 @@ export default function CompanyLogos() {
                 {extendedLogosLeft.map((tech, index) => (
                   <div 
                     key={index} 
-                    className="flex items-center justify-center flex-shrink-0"
+                    className="flex items-center justify-center flex-shrink-0 p-3 gap-2"
                     style={{
-                      width: '117.6px',
-                      height: '67px',
+                      width: '160px',
+                      height: '70px',
                       borderRadius: '16.75px',
                       border: '0.3px solid #BFBFBF',
                       backgroundColor: '#BFBFBF'
                     }}
                   >
+                    <span className="text-sm font-medium text-gray-700">{tech.name}</span>
                     <Image 
                       src={tech.icon} 
                       alt={tech.name} 
-                      width={70} 
-                      height={70} 
-                      className="w-12 h-12 object-contain"
+                      width={32} 
+                      height={32} 
+                      className="w-8 h-8 object-contain"
+                      loading="lazy"
                       onError={(e) => console.log(`Failed to load: ${tech.icon}`)}
                     />
                   </div>
@@ -233,21 +235,23 @@ export default function CompanyLogos() {
                 {extendedLogosRight.map((tech, index) => (
                   <div 
                     key={index} 
-                    className="flex items-center justify-center flex-shrink-0"
+                    className="flex items-center justify-center flex-shrink-0 p-3 gap-2"
                     style={{
-                      width: '117.6px',
-                      height: '67px',
+                      width: '160px',
+                      height: '70px',
                       borderRadius: '16.75px',
                       border: '0.3px solid #BFBFBF',
                       backgroundColor: '#BFBFBF'
                     }}
                   >
+                    <span className="text-sm font-medium text-gray-700">{tech.name}</span>
                     <Image 
                       src={tech.icon} 
                       alt={tech.name} 
-                      width={70} 
-                      height={70} 
-                      className="w-12 h-12 object-contain"
+                      width={32} 
+                      height={32} 
+                      className="w-8 h-8 object-contain"
+                      loading="lazy"
                       onError={(e) => console.log(`Failed to load: ${tech.icon}`)}
                     />
                   </div>

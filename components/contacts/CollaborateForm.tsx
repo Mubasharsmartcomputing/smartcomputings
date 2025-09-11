@@ -132,26 +132,36 @@ export default function CollaborateForm() {
               >
                 Contact Number
               </label>
-              <div className="mt-1 relative rounded-md shadow-sm">
-                <div className="absolute inset-y-0 left-0 flex items-center">
-                  <label htmlFor="country-code" className="sr-only">
-                    Country Code
-                  </label>
+              <div className="mt-1 relative">
+                <div className="absolute inset-y-0 left-0 flex items-center z-10 mr-2">
                   <select
                     id="country-code"
                     name="country-code"
-                    className="focus:ring-blue-500 focus:border-blue-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md"
+                    className="h-full py-0 pl-3 pr-6 mr-2 border-transparent bg-transparent text-gray-700 text-sm rounded-l-md focus:outline-none"
+                    style={{
+                      height: '54px',
+                    }}
                   >
-                    <option>+92</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+92">🇵🇰 +92</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+971">🇦🇪 +971</option>
                   </select>
                 </div>
                 <input
-                  type="text"
+                  type="tel"
                   name="contact-number"
                   id="contact-number"
                   autoComplete="tel"
-                  className="block w-full pl-20 pr-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="XXX-XXX-XXXX"
+                  required
+                  className="block w-full pl-28 pr-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  placeholder="123-456-7890"
                   style={{
                     height: '54px',
                     borderRadius: '7px',
@@ -159,11 +169,6 @@ export default function CollaborateForm() {
                     backgroundColor: '#B0B0B017'
                   }}
                 />
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <svg className="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                </div>
               </div>
             </div>
           </div>
@@ -171,16 +176,18 @@ export default function CollaborateForm() {
           <div className="flex justify-end mt-6">
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] hover:opacity-90 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center gap-2"
+              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] hover:opacity-90 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
                 fontSize: '14px',
-                lineHeight: '44px',
-                letterSpacing: '0%'
+                lineHeight: '20px',
+                letterSpacing: '0%',
+                width: '120px',
+                height: '40px'
               }}
             >
-              Subscribe
+              Submit
             </button>
           </div>
         </form>

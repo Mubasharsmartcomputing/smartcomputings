@@ -1,11 +1,20 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useRouter } from 'next/navigation'
 
 export default function HeroBanner() {
+  const router = useRouter()
+
+  const handleContactClick = () => {
+    router.push('/contact')
+  }
+
   return (
     <section 
-      className="relative overflow-hidden w-full h-auto md:h-[702px]" // Removed h-[702px] from here for better responsiveness, height will be determined by content or flex
+      className="overflow-hidden relative z-60 w-full h-auto md:h-[702px]" // Removed h-[702px] from here for better responsiveness, height will be determined by content or flex
       style={{
         backgroundColor: '#183762',
         borderBottomLeftRadius: '26px',
@@ -59,7 +68,8 @@ export default function HeroBanner() {
 
 
             <Button 
-              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] hover:opacity-90 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center gap-2 mt-8"
+              onClick={handleContactClick}
+              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] relative hover:opacity-90 text-white z-[999] cursor-pointer px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center gap-2 mt-8"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -74,6 +84,8 @@ export default function HeroBanner() {
               </div>
             </Button>
           </div>
+
+        
 
           {/* Right Content - Circuit Image */}
           {/* Adjusted margin top for better alignment and added mb-8 for spacing on small screens */}

@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#183762] text-[#DCDCDC] px-2 py-12">
-  <div className="container mx-auto px-6 py-4">
+    <footer className="bg-[#183762] text-[#DCDCDC] px-2  py-12">
+  <div className="container mx-auto py-4 ">
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start relative">
       
       {/* Left Section - Logo and Description */}
@@ -180,7 +180,7 @@ const Footer = () => {
             letterSpacing: '0%'
           }}
       >
-        All copyrights by Smart Computing SMC Pvt Ltd® 2024 - Careers
+        All copyrights by Smart Computing SMC Pvt Ltd® 2025 - Careers
       </p>
     </div>
   </div>

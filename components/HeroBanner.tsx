@@ -89,7 +89,7 @@ export default function HeroBanner() {
 
           {/* Right Content - Circuit Image */}
           {/* Adjusted margin top for better alignment and added mb-8 for spacing on small screens */}
-          <div className="relative flex justify-center mt-4 sm:mt-8 lg:mt-0 items-center order-2 lg:order-2 mb-8 lg:mb-0">
+          <div className="relative top-[100px] flex justify-center mt-4 sm:mt-8 lg:mt-0 items-center order-2 lg:order-2 mb-8 lg:mb-0">
            
               <Image
                 src="/images/circuit.png"

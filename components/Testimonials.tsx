@@ -70,19 +70,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
       </div>
       
       <p className="text-white mb-6 flex-grow leading-relaxed">"{testimonial.text}"</p>
-      <div 
-        className="flex items-center p-2"
-        style={{
-          background: 'linear-gradient(to right, #25B4F84D 30%, #25B4F800 100%)',
-          backgroundSize: '260px 100%'
-        }}
-      >
-        <Image src={testimonial.image} alt={testimonial.name} width={48} height={48} className="w-12 h-12 rounded-full object-cover mr-4" />
-        <div>
-          <h4 className="font-semibold text-white text-base">{testimonial.name}</h4>
-          <p className="text-white text-sm">{testimonial.role}</p>
-        </div>
-      </div>
+     
     </div>
   );
 };

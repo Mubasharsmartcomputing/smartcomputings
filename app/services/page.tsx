@@ -1,7 +1,7 @@
 
 import CompanyLogos from '../../components/CompanyLogos'
-import ServiceCard from '@/components/services/ServiceCard'
-import { HowWeWorkSection } from '@/components/services/HowWeWorkSection'
+
+import Cycle from '@/components/services/Cycle'
 
 export default function Services() {
   return (
@@ -41,9 +41,11 @@ export default function Services() {
           </p>
         </div>
       </section>
-      <ServiceCard/>
-      <HowWeWorkSection/>
+      {/* <ServiceCard/>
+      <HowWeWorkSection/> */}
+      
       <CompanyLogos />
+      <Cycle/>
      
     </>
   )

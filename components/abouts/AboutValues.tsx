@@ -1,16 +1,19 @@
-import { Users, Globe, Briefcase, MapPin, UserCheck, Star, Heart, Lightbulb, Shield, TrendingUp } from "lucide-react"
+import { Users, Globe, Briefcase, MapPin, UserCheck, Star, Heart, Lightbulb, Shield, TrendingUp, Rocket, GraduationCap, UserPlus, Globe2 } from "lucide-react"
 
 export default function AboutValues() {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Statistics Row */}
-        <div className="flex flex-wrap justify-center lg:justify-between items-center mb-10 px-4 sm:px-6 lg:px-8 py-6 gap-4 lg:gap-0 w-full max-w-full mx-auto" style={{ borderRadius: "20.17px", border: "1.3px solid #ccc", backgroundColor: "#E1EBFF" }}>
+        <div
+          className="flex flex-wrap justify-center lg:justify-between items-center mb-10 px-4 sm:px-6 lg:px-8 py-6 gap-4 lg:gap-0 w-full max-w-full mx-auto"
+          style={{ borderRadius: "20.17px", border: "1.3px solid #ccc", backgroundColor: "#E1EBFF" }}
+        >
           <div className="flex items-center gap-3">
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-500" />
             <div className="flex flex-col">
               <span className="text-base sm:text-lg font-semibold text-gray-800">50+</span>
-              <span className="text-xs sm:text-sm text-gray-600">employees</span>
+              <span className="text-xs sm:text-sm text-gray-600">Team members</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -23,14 +26,14 @@ export default function AboutValues() {
           <div className="flex items-center gap-3">
             <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-500" />
             <div className="flex flex-col">
-              <span className="text-base sm:text-lg font-semibold text-gray-800">60+</span>
+              <span className="text-base sm:text-lg font-semibold text-gray-800">80+</span>
               <span className="text-xs sm:text-sm text-gray-600">Projects done</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-500" />
             <div className="flex flex-col">
-              <span className="text-base sm:text-lg font-semibold text-gray-800">30+</span>
+              <span className="text-base sm:text-lg font-semibold text-gray-800">4+</span>
               <span className="text-xs sm:text-sm text-gray-600">Offices</span>
             </div>
           </div>
@@ -38,11 +41,10 @@ export default function AboutValues() {
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-500" />
             <div className="flex flex-col">
               <span className="text-base sm:text-lg font-semibold text-gray-800">20+</span>
-              <span className="text-xs sm:text-sm text-gray-600">Projects awards</span>
+              <span className="text-xs sm:text-sm text-gray-600">Project awards</span>
             </div>
           </div>
         </div>
-
 
         {/* Core Values Section */}
         <div className="text-center gap-4 mb-12 px-4">
@@ -50,14 +52,70 @@ export default function AboutValues() {
             Our Core Values
           </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
-            The principles that guide our approach to business and technology
+            The principles that shape our vision, inspire our people, and guide every solution we deliver.
           </p>
         </div>
 
         {/* Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4">
+          {/* Empower & Win */}
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
+                <UserCheck className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">Empower & Win</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              We empower our team with trust and responsibility, enabling everyone to deliver their best work and win
+              together as one strong unit.
+            </p>
+          </div>
+
+          {/* Breakthrough Technology */}
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
+                <Rocket className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">Breakthrough Technology</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              We embrace innovation through extensive R&D, leveraging modern technologies to optimize our products and
+              services for maximum impact.
+            </p>
+          </div>
+
+          {/* Training & Development */}
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
+                <GraduationCap className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">Training & Development</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              We believe in continuous learning and development, ensuring every team member stays current, skilled, and
+              ready for tomorrow’s challenges.
+            </p>
+          </div>
+
+          {/* Strategic Partnerships */}
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
+                <UserPlus className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">Strategic Partnerships</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              We believe in building strong global partnerships that strengthen our capabilities with shared knowledge,
+              expertise, and skills.
+            </p>
+          </div>
+
           {/* Excellence */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
                 <Star className="w-6 h-6 text-cyan-500" />
@@ -65,78 +123,22 @@ export default function AboutValues() {
               <h3 className="text-xl font-semibold text-gray-800">Excellence</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              We strive for excellence in every solution we deliver, ensuring the highest standards of quality and
-              performance.
+              We honor our responsibilities with ownership and accountability, ensuring every task is executed with the
+              highest level of excellence for our customers.
             </p>
           </div>
 
-          {/* Integrity */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
+          {/* Global Impact */}
+          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: "16px", border: "0.3px solid #02B2E8" }}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
-                <Heart className="w-6 h-6 text-cyan-500" />
+                <Globe2 className="w-6 h-6 text-cyan-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800">Integrity</h3>
+              <h3 className="text-xl font-semibold text-gray-800">Global Impact</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              We conduct our business with the highest level of integrity, transparency and ethical standards in all our
-              interactions.
-            </p>
-          </div>
-
-          {/* Innovation */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-6 h-6 text-cyan-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800">Innovation</h3>
-            </div>
-            <p className="text-gray-600 leading-relaxed">
-              We embrace innovation and continuously explore new technologies and approaches to deliver cutting-edge
-              solutions.
-            </p>
-          </div>
-
-          {/* Collaboration */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
-                <Users className="w-6 h-6 text-cyan-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800">Collaboration</h3>
-            </div>
-            <p className="text-gray-600 leading-relaxed">
-              Together, we combine expertise and experience to create tailored solutions. Our collaborative ethos drives
-              growth, efficiency, and lasting impact.
-            </p>
-          </div>
-
-          {/* Reliability */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
-                <Shield className="w-6 h-6 text-cyan-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800">Reliability</h3>
-            </div>
-            <p className="text-gray-600 leading-relaxed">
-              We are committed to being a reliable partner, consistently delivering on our promises and providing
-              dependable support.
-            </p>
-          </div>
-
-          {/* Growth */}
-          <div className="bg-white p-8 shadow-sm" style={{ borderRadius: '16px', border: '0.3px solid #02B2E8' }}>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-cyan-50 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-cyan-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800">Growth</h3>
-            </div>
-            <p className="text-gray-600 leading-relaxed">
-              We are dedicated to continuous growth and improvement, both for our clients' businesses and for our own
-              organization.
+              We aim to develop products and services that contribute to modern technology and create a lasting positive
+              impact on a global scale.
             </p>
           </div>
         </div>

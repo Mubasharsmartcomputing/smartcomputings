@@ -11,8 +11,8 @@ export default function Home() {
     <main>
       <HeroBanner />
       <CompanyLogos />
-      <WhatWeDoImage/>
       <WhatWeDo/>
+      <WhatWeDoImage/>      
       <ApproachImage/>
       <MissionSection/>
       <Testimonials/>

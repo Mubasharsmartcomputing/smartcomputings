@@ -103,7 +103,7 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 
-            className="text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] align-middle"
+            className="text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#02B2E8] align-middle"
             style={{
               fontFamily: 'Inter',
               fontWeight: 600,
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
               letterSpacing: '-1.16px'
             }}
           >
-            What We Do
+            Our Core Verticals
           </h1>
         </div>
 

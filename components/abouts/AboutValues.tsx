@@ -5,7 +5,7 @@ export default function AboutValues() {
     <div className="min-h-screen bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Statistics Row */}
-        <div
+        {/* <div
           className="flex flex-wrap justify-center lg:justify-between items-center mb-10 px-4 sm:px-6 lg:px-8 py-6 gap-4 lg:gap-0 w-full max-w-full mx-auto"
           style={{ borderRadius: "20.17px", border: "1.3px solid #ccc", backgroundColor: "#E1EBFF" }}
         >
@@ -44,7 +44,7 @@ export default function AboutValues() {
               <span className="text-xs sm:text-sm text-gray-600">Project awards</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Core Values Section */}
         <div className="text-center gap-4 mb-12 px-4">

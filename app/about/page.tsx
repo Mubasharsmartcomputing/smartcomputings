@@ -1,5 +1,6 @@
 import AboutValues from '../../components/abouts/AboutValues'
 import MissionVision from '../../components/abouts/MissionVision'
+import CredibilityProof from '../../components/customers/CustomerPage'
 import Testimonials from '../../components/Testimonials'
 
 export default function About() {
@@ -43,6 +44,7 @@ export default function About() {
       </section>
       <MissionVision />
       <AboutValues />
+      <CredibilityProof />
       
       
     </>

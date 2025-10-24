@@ -42,9 +42,10 @@ export default function About() {
           </p>
         </div>
       </section>
+      <CredibilityProof />
       <MissionVision />
       <AboutValues />
-      <CredibilityProof />
+      
       
       
     </>

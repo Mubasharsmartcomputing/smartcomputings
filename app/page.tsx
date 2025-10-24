@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <main>
       <HeroBanner />
-      <CompanyLogos />
+       <ApproachImage/>
+       <MissionSection/>
       <WhatWeDo/>
-      <WhatWeDoImage/>      
-      <ApproachImage/>
-      <MissionSection/>
+      <CompanyLogos />
+      <WhatWeDoImage/>       
       <Testimonials/>
     </main>
   )

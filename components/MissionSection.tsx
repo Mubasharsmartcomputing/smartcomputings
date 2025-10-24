@@ -4,7 +4,7 @@ const MissionSection = () => {
   return (
 
     
-    <section className="bg-[#02B2E8]  text-white py-16 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+    <section className="bg-[#02B2E8]  text-white py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
       {/* Background image */}
       <div 
         className="absolute pointer-events-none hidden lg:block"
@@ -44,7 +44,7 @@ const MissionSection = () => {
           style={{
             fontFamily: 'Inter',
             fontWeight: 400,
-            fontSize: '15.4px',
+            fontSize: '18px',
             lineHeight: '24px',
             letterSpacing: '0%'
           }}
@@ -56,7 +56,7 @@ const MissionSection = () => {
           style={{
             fontFamily: 'Inter',
             fontWeight: 600,
-            fontSize: '36px',
+            fontSize: '48px',
             lineHeight: '100%',
             letterSpacing: '-1.16px'
           }}
@@ -64,11 +64,11 @@ const MissionSection = () => {
           No Delays, Just Results!
         </h2>
 
-        <ul className="space-y-4">
-          <li className="flex items-center">
-            <span className="mr-3 text-2xl text-black">•</span>
+        <div className="flex flex-wrap gap-4">
+          <div className="flex items-center">
+            <span className="mr-3 text-2xl text-white">•</span>
             <span 
-              className="text-black"
+              className="text-white"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -77,13 +77,13 @@ const MissionSection = () => {
                 letterSpacing: '0%'
               }}
             >
-              Enabling growth through technology
+              IOT
             </span>
-          </li>
-          <li className="flex items-center">
-            <span className="mr-3 text-2xl text-black">•</span>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-3 text-2xl text-white">•</span>
             <span 
-              className="text-black"
+              className="text-white"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -92,13 +92,13 @@ const MissionSection = () => {
                 letterSpacing: '0%'
               }}
             >
-              Empowering organizations with AI & IT solutions
+              Software
             </span>
-          </li>
-          <li className="flex items-center">
-            <span className="mr-3 text-2xl text-black">•</span>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-3 text-2xl text-white">•</span>
             <span 
-              className="text-black"
+              className="text-white"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -107,13 +107,13 @@ const MissionSection = () => {
                 letterSpacing: '0%'
               }}
             >
-              Driving transformation and success
+              Apps
             </span>
-          </li>
-          <li className="flex items-center">
-            <span className="mr-3 text-2xl text-black">•</span>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-3 text-2xl text-white">•</span>
             <span 
-              className="text-black"
+              className="text-white"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -122,13 +122,13 @@ const MissionSection = () => {
                 letterSpacing: '0%'
               }}
             >
-              Focused on innovation
+              Blockchain
             </span>
-          </li>
-          <li className="flex items-center">
-            <span className="mr-3 text-2xl text-black">•</span>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-3 text-2xl text-white">•</span>
             <span 
-              className="text-black"
+              className="text-white"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -137,10 +137,10 @@ const MissionSection = () => {
                 letterSpacing: '0%'
               }}
             >
-              Customized solutions for every challenge
+              AI
             </span>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

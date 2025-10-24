@@ -9,7 +9,7 @@ export default function MissionVision() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[#189EFF] align-middle">
-              Our Mission &Vision
+              Our Mission & Vision
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               Guiding principles that drive everything we do at Smart Computing

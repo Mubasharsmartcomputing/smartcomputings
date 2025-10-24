@@ -61,15 +61,15 @@ const StarRating = ({ rating }: { rating: number }) => {
 
 const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
   return (
-    <div className="rounded-xl p-8 min-h-[320px] flex flex-col h-full mx-auto max-w-xs" style={{ backgroundColor: '#FFFFFF1A' }}>
+    <div className="rounded-xl p-8 min-h-[320px] flex flex-col h-full mx-auto max-w-xs bg-gray-50 border border-gray-200">
       <StarRating rating={testimonial.rating} />
-      <div className="text-white mb-4">
+      <div className="text-gray-700 mb-4">
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-9.983z" />
         </svg>
       </div>
       
-      <p className="text-white mb-6 flex-grow leading-relaxed">"{testimonial.text}"</p>
+      <p className="text-gray-700 mb-6 flex-grow leading-relaxed">"{testimonial.text}"</p>
      
     </div>
   );
@@ -123,11 +123,11 @@ const Testimonials = () => {
 
   return (
     <>
-      <section className="py-20 bg-[#183762] container relative overflow-hidden rounded-[40px] mt-20 mx-auto max-w-6xl">
+      <section className="py-12 bg-white container relative overflow-hidden rounded-[40px] my-12 mx-auto max-w-6xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 
-              className=" mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[#189EFF] align-middle"
+              className=" mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#02B2E8] align-middle"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
@@ -136,10 +136,10 @@ const Testimonials = () => {
                 letterSpacing: '-1.16px'
               }}
             >
-              What Our Clients Say
+              What Our Partner's Say
             </h2>
             <p 
-              className="text-gray-300 max-w-3xl mx-auto"
+              className="text-gray-600 max-w-3xl mx-auto"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 400,
@@ -168,99 +168,16 @@ const Testimonials = () => {
           </div>
 
           <div className="flex justify-center space-x-4 mt-8">
-            <button onClick={prevSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200" style={{ backgroundColor: '#FFFFFF1A' }}>
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+            <button onClick={prevSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 bg-gray-100 hover:bg-gray-200">
+              <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button onClick={nextSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200" style={{ backgroundColor: '#FFFFFF1A' }}>
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            <button onClick={nextSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 bg-gray-100 hover:bg-gray-200">
+              <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </button>
           </div>
         </div>
       </section>
 
-      <section className="py-12" >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between bg-[#FAFAFA] rounded-lg p-8 shadow-sm">
-            <div className="flex items-center mb-6 md:mb-0 md:w-1/3">
-              <div>
-                <h3 
-                  className="text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] mb-2 to-[#189EFF] align-middle"
-                  style={{
-                    fontFamily: 'Inter',
-                    fontWeight: 600,
-                    fontSize: '24px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.5px'
-                  }}
-                >
-                  Join Our Newsletter
-                </h3>
-                <p 
-                  className="text-gray-600 max-w-sm"
-                  style={{
-                    fontFamily: 'Inter',
-                    fontWeight: 400,
-                    fontSize: '14px',
-                    lineHeight: '20px',
-                    letterSpacing: '0%'
-                  }}
-                >
-                  Subscribe to receive updates on new technology, exclusive updates on technology to get more updated be the first to subscribe
-                </p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/3 flex justify-center">
-              <Image src="/joinnews/image.png" alt="Newsletter" width={80} height={80} className=" object-contain" />
-            </div>
-            <div className="w-full md:w-1/3 flex flex-col justify-end">
-              <div className="flex flex-col sm:flex-row w-full max-w-md space-y-3 sm:space-y-0 sm:space-x-3">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-1 focus:ring-2 focus:ring-[#183762]"
-                  style={{
-                    minWidth: '200px',
-                    height: '44px',
-                    borderRadius: '6.1px',
-                    border: '0.46px dashed #183762',
-                    borderStyle: 'dashed',
-                    strokeDasharray: '2.4',
-                    background: 'linear-gradient(to bottom, #FFFFFF, #D3EDFF)',
-                    padding: '12px 16px',
-                    outline: 'none'
-                  }}
-                />
-                <button 
-                  className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] hover:opacity-90 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center gap-2 flex-shrink-0"
-                  style={{
-                    fontFamily: 'Inter',
-                    fontWeight: 500,
-                    fontSize: '14px',
-                    lineHeight: '44px',
-                    letterSpacing: '0%',
-                    minWidth: '120px',
-                    height: '44px'
-                  }}
-                >
-                  Subscribe
-                </button>
-              </div>
-              <p 
-                className="text-gray-500 text-xs mt-2 max-w-md"
-                style={{
-                  fontFamily: 'Inter',
-                  fontWeight: 400,
-                  fontSize: '12px',
-                  lineHeight: '16px',
-                  letterSpacing: '0%'
-                }}
-              >
-                We respect your privacy. Unsubscribe at any time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

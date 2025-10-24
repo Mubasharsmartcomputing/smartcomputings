@@ -34,124 +34,175 @@ export function HowWeWorkSection() {
         </div>
 
         {/* Process Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-20">
           {/* Vertical dashed lines */}
           <div className="hidden md:block absolute inset-0 pointer-events-none">
-            <div className="absolute left-1/4 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-2/4 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-3/4 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-1/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-2/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-3/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-4/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-5/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
           </div>
 
-          {/* Discover */}
+          {/* Requirement Analysis */}
           <div className="relative z-10">
             <h3 
               className="text-gray-800 mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '18px',
                 lineHeight: '100%'
               }}
             >
-              Discover
+              Requirement Analysis
             </h3>
             <p 
               className="text-gray-600 leading-relaxed"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '20px'
+                fontSize: '13px',
+                lineHeight: '18px'
               }}
             >
               We analyze your business needs and challenges.
             </p>
           </div>
 
-          {/* Design */}
+          {/* Commence Project */}
           <div className="relative z-10">
             <h3 
               className="text-gray-800 mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '18px',
                 lineHeight: '100%'
               }}
             >
-              Design
+              Commence Project
             </h3>
             <p 
               className="text-gray-600 leading-relaxed"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '20px'
+                fontSize: '13px',
+                lineHeight: '18px'
               }}
             >
-              We craft customized, innovative technology solutions.
+              We initiate the project with proper planning.
             </p>
           </div>
 
-          {/* Deliver */}
+          {/* Coding & Development */}
           <div className="relative z-10">
             <h3 
               className="text-gray-800 mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '18px',
                 lineHeight: '100%'
               }}
             >
-              Deliver
+              Coding & Development
             </h3>
             <p 
               className="text-gray-600 leading-relaxed"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '20px'
+                fontSize: '13px',
+                lineHeight: '18px'
               }}
             >
-              We implement with precision and efficiency.
+              We develop the solution with precision.
             </p>
           </div>
 
-          {/* Support */}
+          {/* Deployment Installation */}
           <div className="relative z-10">
             <h3 
               className="text-gray-800 mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '18px',
                 lineHeight: '100%'
               }}
             >
-              Support
+              Deployment Installation
             </h3>
             <p 
               className="text-gray-600 leading-relaxed"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
-                fontSize: '14px',
-                lineHeight: '20px'
+                fontSize: '13px',
+                lineHeight: '18px'
               }}
             >
-              We provide continuous guidance for long-term success.
+              We deploy and install the solution.
+            </p>
+          </div>
+
+          {/* Customer Feedback */}
+          <div className="relative z-10">
+            <h3 
+              className="text-gray-800 mb-3"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 600,
+                fontSize: '18px',
+                lineHeight: '100%'
+              }}
+            >
+              Customer Feedback
+            </h3>
+            <p 
+              className="text-gray-600 leading-relaxed"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 500,
+                fontSize: '13px',
+                lineHeight: '18px'
+              }}
+            >
+              We gather and implement your feedback.
+            </p>
+          </div>
+
+          {/* Maintenance & Updates */}
+          <div className="relative z-10">
+            <h3 
+              className="text-gray-800 mb-3"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 600,
+                fontSize: '18px',
+                lineHeight: '100%'
+              }}
+            >
+              Maintenance & Updates
+            </h3>
+            <p 
+              className="text-gray-600 leading-relaxed"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 500,
+                fontSize: '13px',
+                lineHeight: '18px'
+              }}
+            >
+              We provide ongoing support and updates.
             </p>
           </div>
         </div>
 
         {/* Stats Section */}
-        <div className="relative z-20 flex flex-col justify-end items-center ml-[-54px] lg:ml-[1080px] lg:mt-56 mt-[-50px] space-x-4 mb-8">
-          <div className="bg-blue-900 rounded-full p-3">
-            <TrendingUp className="w-6 h-6 text-white" />
-          </div>
+        <div className="relative z-20 flex flex-col justify-end items-center ml-[-54px] lg:ml-[900px] lg:mt-[300px] mt-[-50px] space-x-4 mb-8">
           <div className="text-right">
             <div 
               className="text-gray-800"

@@ -36,15 +36,31 @@ const Footer = () => {
       {/* Vertical Divider - Hidden on mobile, visible on large screens */}
       <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-white opacity-30"></div>
 
-      {/* Middle Section - Pakistan Address */}
+      {/* Middle Section - Flags and Pakistan Address */}
       <div className="space-y-4 lg:px-4">
-        <div className="flex items-center gap-3 mb-6">
-          <img 
-            src="/flag/image.png" 
-            alt="Pakistan Flag"
-            className="w-6 h-4"
-          />
-          <span className="text-white font-medium text-lg">Pakistan</span>
+        {/* Flags Section */}
+        <div className="flex gap-6 mb-6">
+          <div className="flex items-center gap-2">
+            <Image 
+             
+              src="/flag/pakistan.png"
+              alt="German Flag"
+               width={30}
+              height={30}
+              className="object-cover"
+            />
+            <span className="text-white font-medium text-sm">Germany</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Image 
+                src="/flag/german.png" 
+              alt="Pakistan Flag"
+              width={30}
+              height={30}
+              className="object-cover"
+            />
+            <span className="text-white font-medium text-sm">Pakistan</span>
+          </div>
         </div>
         
         <div className="flex justify-between items-start lg:items-center gap-8">

@@ -113,7 +113,7 @@ export default function ServiceCard() {
                   {/* Content - Adjusted for mobile */}
                   <div className="md:flex-row flex flex-col space-y-2 flex-1 mt-8 md:mt-0 md:ml-20 text-center md:text-left">
                     <h3 
-                      className="text-white w-auto md:w-40  leading-tight text-sm md:text-lg"
+                      className="text-white w-auto md:w-52  leading-tight text-sm md:text-lg"
                       style={{
                         fontFamily: 'Inter',
                         fontWeight: 600,
@@ -125,7 +125,7 @@ export default function ServiceCard() {
                     </h3>
   
                     <p 
-                      className="text-gray-300 w-auto ml-auto md:ml-20 md:w-80 leading-relaxed text-xs md:text-[15.4px]"
+                      className="text-gray-300 w-auto ml-auto md:ml-20 md:w-[400px] leading-relaxed text-xs md:text-[15.4px]"
                       style={{
                         fontFamily: 'Inter',
                         fontWeight: 400,
@@ -135,21 +135,6 @@ export default function ServiceCard() {
                     >
                       {service.description}
                     </p>
-                  </div>
-
-                  {/* Learn More Button - Mobile: Bottom center, Desktop: Right */}
-                  <div className="flex-shrink-0 md:ml-6 mt-3 md:mt-0 text-center md:text-right">
-                    <button 
-                      className="text-gray-300 hover:text-white transition-colors text-xs md:text-sm"
-                      style={{
-                        fontFamily: 'Inter',
-                        fontWeight: 500,
-                        lineHeight: '44px',
-                        letterSpacing: '0%'
-                      }}
-                    >
-                      Learn more )
-                    </button>
                   </div>
                 </div>
               )

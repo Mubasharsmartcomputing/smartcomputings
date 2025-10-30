@@ -37,9 +37,9 @@ export default function Header() {
             <Link href="/services" className={`hover:text-cyan-400 transition-colors ${pathname === '/services' ? 'text-cyan-400' : 'text-white'}`}>
               Services
             </Link>
-            {/* <Link href="/portfolio" className={`hover:text-cyan-400 transition-colors ${pathname === '/portfolio' ? 'text-cyan-400' : 'text-white'}`}>
+            <Link href="/portfolio" className={`hover:text-cyan-400 transition-colors ${pathname === '/portfolio' ? 'text-cyan-400' : 'text-white'}`}>
               Portfolio
-            </Link> */}
+            </Link>
             <Link href="/contact" className={`hover:text-cyan-400 transition-colors ${pathname === '/contact' ? 'text-cyan-400' : 'text-white'}`}>
               Contact Us
             </Link>

@@ -6,18 +6,10 @@ export function HowWeWorkSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h2 
-            className="text-cyan-600 mb-6"
-            style={{
-              fontFamily: 'Inter',
-              fontWeight: 600,
-              fontSize: '36px',
-              lineHeight: '100%',
-              letterSpacing: '-1.16px'
-            }}
-          >
-            How we work?
-          </h2>
+          
+          <h3  className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold bg-gradient-to-r from-[#215EB3] mb-4 to-[#02B2E8] text-transparent bg-clip-text text-start">
+          End To End Development Cycle
+        </h3>
           <p 
             className="text-gray-600 leading-relaxed max-w-4xl"
             style={{
@@ -36,7 +28,7 @@ export function HowWeWorkSection() {
         {/* Process Steps */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-20">
           {/* Vertical dashed lines centered between columns */}
-          <div className="hidden md:block absolute inset-0 pointer-events-none">
+          <div className="hidden md:block absolute inset-0 pointer-events-none" style={{ height: '300px' }}>
             <div className="absolute left-[-10px] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
             <div className="absolute left-[200px] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
             <div className="absolute left-[calc(5/16*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
@@ -203,7 +195,7 @@ export function HowWeWorkSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="relative z-20 flex flex-col justify-end items-center ml-[-54px] lg:ml-[900px] lg:mt-[300px] mt-[-50px] space-x-4 mb-8">
+        <div className="relative z-20 flex flex-col justify-end items-center lg:ml-[900px] lg:mt-[300px] mt-8 mb-8 px-4 w-full lg:w-auto">
           <div className="text-right">
             <div 
               className="text-gray-800"

@@ -35,13 +35,14 @@ export function HowWeWorkSection() {
 
         {/* Process Steps */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-20">
-          {/* Vertical dashed lines */}
+          {/* Vertical dashed lines centered between columns */}
           <div className="hidden md:block absolute inset-0 pointer-events-none">
-            <div className="absolute left-1/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-2/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-3/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-4/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
-            <div className="absolute left-5/6 top-0 bottom-0 w-px border-l-2 h-60 border-dashed border-gray-300"></div>
+            <div className="absolute left-[-10px] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[200px] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[calc(5/16*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[calc(7/14.2*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[calc(9/14*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[calc(11/13.2*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
           </div>
 
           {/* Requirement Analysis */}
@@ -240,12 +241,9 @@ export function HowWeWorkSection() {
             src="/howwework/image.png" 
             alt="How we work background" 
             className="w-full h-full object-cover"
-          />
-         
+          />         
         </div>
       </div>
-      
-
     </section>
   )
 }

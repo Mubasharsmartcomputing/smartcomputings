@@ -4,7 +4,7 @@ export default function MissionVision() {
   return (
     <>
       {/* Mission & Vision Section */}
-      <section className="container mx-auto bg-[#183762] px-6 my-10 py-16 flex items-center justify-center">
+      <section className="container mx-auto bg-[#183762] px-6 mb-10 py-16 flex items-center justify-center">
         <div className="max-w-7xl mx-auto w-full">
           {/* Header */}
           <div className="text-center mb-16">

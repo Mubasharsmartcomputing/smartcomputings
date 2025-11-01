@@ -45,14 +45,14 @@ export default function CompanyHighlights() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-16">
    
-       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#215EB3] to-[#02B2E8] text-transparent bg-clip-text text-center mb-16">
+       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#215EB3] to-[#02B2E8] text-transparent bg-clip-text text-center mb-12">
         Company Highlights
       </h2>
 
       {/* Top Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-8 mb-12">
         {topHighlights.map((highlight, index) => (
-          <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-40 mx-auto">
+          <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-48 mx-auto">
             <h3 
               className="text-gray-800 mb-3"
               style={{
@@ -91,9 +91,9 @@ export default function CompanyHighlights() {
       </div>
 
       {/* Bottom Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-16 max-w-4xl mx-auto">
         {bottomHighlights.map((highlight, index) => (
-          <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-48 mx-auto">
+          <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-52 mx-auto">
             <h3 
               className="text-gray-800 mb-3"
               style={{

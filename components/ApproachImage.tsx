@@ -43,18 +43,18 @@ export default function CompanyHighlights() {
   const bottomHighlights = highlights.filter(h => h.position === "bottom");
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-16">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-12 lg:py-16">
    
-       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#215EB3] to-[#02B2E8] text-transparent bg-clip-text text-center mb-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold bg-gradient-to-r from-[#215EB3] to-[#02B2E8] text-transparent bg-clip-text text-center mb-8 sm:mb-10 lg:mb-12">
         Company Highlights
       </h2>
 
       {/* Top Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-0 px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10 lg:mb-12">
         {topHighlights.map((highlight, index) => (
           <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-48 mx-auto">
             <h3 
-              className="text-gray-800 mb-3"
+              className="text-gray-800 mb-2 sm:mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
@@ -82,20 +82,20 @@ export default function CompanyHighlights() {
       </div>
 
       {/* Approach Image */}
-      <div className="flex justify-center items-center my-8">
+      <div className="flex justify-center items-center my-6 sm:my-8 px-4">
         <img 
           src="/approach/image1.png" 
           alt="Company Approach" 
-          className="max-w-full h-auto"
+          className="max-w-full h-auto w-full sm:w-auto"
         />
       </div>
 
       {/* Bottom Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 mt-16 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-0 mt-8 sm:mt-12 lg:mt-16 max-w-4xl mx-auto px-4 sm:px-6">
         {bottomHighlights.map((highlight, index) => (
           <div key={index} className="flex flex-col items-center text-center max-w-xs lg:max-w-52 mx-auto">
             <h3 
-              className="text-gray-800 mb-3"
+              className="text-gray-800 mb-2 sm:mb-3"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,

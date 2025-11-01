@@ -20,6 +20,7 @@ export default function MissionVision() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Mission Card */}
             <div
+            
               className=" backdrop-blur-sm rounded-2xl p-8 md:p-10"
               style={{
                 backgroundColor: "#20202017",

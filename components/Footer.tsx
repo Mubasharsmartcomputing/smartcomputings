@@ -77,7 +77,7 @@ const Footer = () => {
                 letterSpacing: '0%'
               }}
             >
-              <div>Building 102b Commercial Area, Phase 1</div>
+              <div>Building 1026 Commercial Area, Phase 1</div>
               <div>Lake City Meadows, Lahore</div>
             </div>
           </div>

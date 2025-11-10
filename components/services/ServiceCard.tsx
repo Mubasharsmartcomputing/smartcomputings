@@ -125,7 +125,7 @@ export default function ServiceCard() {
                     </h3>
   
                     <p 
-                      className="text-gray-300 w-auto ml-auto md:ml-20 md:w-[400px] leading-relaxed text-xs md:text-[15.4px]"
+                      className="text-gray-300 w-auto ml-[0px] md:ml-20 md:w-[400px] leading-relaxed text-xs md:text-[15.4px]"
                       style={{
                         fontFamily: 'Inter',
                         fontWeight: 400,

@@ -33,7 +33,7 @@ export function HowWeWorkSection() {
             <div className="absolute left-[200px] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
             <div className="absolute left-[calc(5/16*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
             <div className="absolute left-[calc(7/14.2*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
-            <div className="absolute left-[calc(9/14*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
+            <div className="absolute left-[calc(9/13.5*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
             <div className="absolute left-[calc(11/13.2*100%)] top-0 bottom-0 w-px border-r-2 border-dashed border-gray-300"></div>
           </div>
 
@@ -198,7 +198,7 @@ export function HowWeWorkSection() {
         <div className="relative z-20 flex flex-col justify-end items-center lg:ml-[900px] lg:mt-[300px] mt-8 mb-8 px-4 w-full lg:w-auto">
           <div className="text-right">
             <div 
-              className="text-gray-800"
+              className="text-gray-800 hidden md:block"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 600,
@@ -209,7 +209,7 @@ export function HowWeWorkSection() {
               80+
             </div>
             <div 
-              className="text-gray-600"
+              className="text-gray-600 hidden md:block"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -226,7 +226,7 @@ export function HowWeWorkSection() {
       {/* Background Image with Gradient - Desktop Only */}
       <div 
         className="absolute pointer-events-none hidden lg:block" 
-        style={{ top: '375px', left: '37%', transform: 'translateX(-50%)', width: '1450px', height: '407px' }}
+        style={{ top: '375px', left: '37%', transform: 'translateX(-50%)', width: '1450px', height: '390px' }}
       >
         <div className="relative w-full h-full">
           <img 

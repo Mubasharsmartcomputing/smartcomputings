@@ -4,7 +4,7 @@ export default function Cycle() {
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-28">
-          <h1 className="text-2xl sm:text-3xl lg:text-[35px] font-semibold font-inter leading-[110%] lg:leading-[100%] tracking-[-0.5px] lg:tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[#189EFF] px-2">
+          <h1 className="text-2xl sm:text-3xl lg:text-[35px] font-semibold font-inter  leading-normal tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[#189EFF]  mb-4 pt-2 pb-2">
             Which engagement model should be chosen for the project?  
           </h1>
         </div>

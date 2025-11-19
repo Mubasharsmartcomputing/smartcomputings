@@ -69,7 +69,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
         </svg>
       </div>
       
-      <p className="text-gray-700 mb-6 flex-grow leading-relaxed">"{testimonial.text}"</p>
+      <p className="text-gray-700 mb-6 text-[#0075B2] flex-grow leading-relaxed">"{testimonial.text}"</p>
      
     </div>
   );
@@ -168,10 +168,10 @@ const Testimonials = () => {
           </div>
 
           <div className="flex justify-center space-x-4 mt-8">
-            <button onClick={prevSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 bg-gray-100 hover:bg-gray-200">
+            <button onClick={prevSlide} className="rounded-full p-3  transition-all duration-200 bg-gray-100 hover:bg-gray-200">
               <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button onClick={nextSlide} className="rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 bg-gray-100 hover:bg-gray-200">
+            <button onClick={nextSlide} className="rounded-full p-3  transition-all duration-200 bg-gray-100 hover:bg-gray-200">
               <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </button>
           </div>

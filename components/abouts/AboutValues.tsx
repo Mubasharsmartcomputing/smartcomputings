@@ -2,15 +2,15 @@ import Image from "next/image"
 
 export default function AboutValues() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
         
 
         {/* Core Values Section */}
         <div className="text-center gap-4 mb-12 px-4">
-          <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[54px] font-inter leading-normal tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] mb-4 pt-2 pb-2">
-  Our Core Values
-</h2>
+          <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-inter leading-normal tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] mb-4 pt-2 pb-2">
+       Our Core Values
+        </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
             The principles that shape our vision, inspire our people, and guide every solution we deliver.
           </p>

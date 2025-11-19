@@ -18,7 +18,7 @@ export default function CollaborateForm() {
             <span className="text-2xl md:text-[36px] pt-2 lg:text-[55px]">Let's Collaborate.</span> <span className="text-2xl md:text-[36px] lg:text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] align-middle">We're All Ears!</span>
           </h1>
           <p 
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-gray-600 max-w-3xl mx-auto"
             style={{
               fontFamily: 'Inter',
               fontWeight: 400,
@@ -170,6 +170,39 @@ export default function CollaborateForm() {
                   }}
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Name with Comment Field */}
+          <div className="mt-6">
+            <label 
+              htmlFor="name-with-comment" 
+              className="block text-sm font-medium text-gray-700 mb-2"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 500
+              }}
+            >
+              Comment
+            </label>
+            <div className="relative">
+              <textarea
+                id="name-with-comment"
+                name="name-with-comment"
+                rows={4}
+                className="w-full px-4 py-3 text-gray-900 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder=""
+                style={{
+                  borderRadius: '7px',
+                  border: '1px solid #B0B0B017',
+                  backgroundColor: '#B0B0B017',
+                  resize: 'vertical',
+                  minHeight: '120px',
+                  fontFamily: 'Inter',
+                  fontSize: '14px',
+                  lineHeight: '1.5'
+                }}
+              />
             </div>
           </div>
 

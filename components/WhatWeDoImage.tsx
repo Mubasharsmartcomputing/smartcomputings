@@ -22,17 +22,19 @@ export default function WhatWeDoImage() {
       </p>
 
       {/* Video section */}
-      <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
-        <video 
-          src="/flow_computer.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-auto object-contain rounded-lg md:rounded-xl lg:rounded-2xl"
-        >
-          Your browser does not support the video tag.
-        </video>
+      <div className="w-full flex justify-center px-4">
+        <div className="relative overflow-hidden border-[5px] border-[#E1E1E1] rounded-[68px] w-full max-w-[1025px] aspect-video">
+          <video 
+            src="/flow_computer.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   );

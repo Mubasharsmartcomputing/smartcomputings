@@ -19,8 +19,8 @@ export default function Header() {
             <Image 
               src="/logo/image.png" 
               alt="Smart Computing" 
-              width={120} 
-              height={100}
+              width={90} 
+              height={60}
               priority
               loading="eager"
             />

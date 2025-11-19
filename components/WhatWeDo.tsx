@@ -35,9 +35,9 @@ export default function WhatWeDo() {
   ]
 
   return (
-    <div className="min-h-screen py-16 px-4 relative overflow-hidden" >
+    <div className="min-h-screen py-24 px-4 relative overflow-hidden" >
       {/* Background Image - Large screens */}
-      <div 
+      {/* <div 
         className="absolute hidden xl:block"
         style={{
           width: '70vw',
@@ -56,9 +56,9 @@ export default function WhatWeDo() {
           quality={100}
         />
       </div>
-      
+       */}
       {/* Background Image - Laptop screens */}
-      <div 
+      {/* <div 
         className="absolute hidden lg:block xl:hidden"
         style={{
           width: '80vw',
@@ -76,10 +76,10 @@ export default function WhatWeDo() {
           objectFit="cover" 
           quality={100}
         />
-      </div>
+      </div> */}
       
       {/* Background Image - Tablet screens */}
-      <div 
+      {/* <div 
         className="absolute hidden md:block lg:hidden"
         style={{
           width: '70vw',
@@ -97,7 +97,7 @@ export default function WhatWeDo() {
           objectFit="cover" 
           quality={100}
         />
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto relative z-10"> {/* Added relative and z-10 to keep content on top */}
         {/* Header */}

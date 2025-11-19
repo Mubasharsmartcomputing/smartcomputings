@@ -14,7 +14,7 @@ export default function HeroBanner() {
 
   return (
     <section
-      className="overflow-hidden relative w-full h-[1000px] md:h-[602px]"
+      className="overflow-hidden relative w-full h-[1000px] md:h-[590px]"
       style={{
         backgroundColor: '#183762',
         borderBottomLeftRadius: '26px',
@@ -25,7 +25,7 @@ export default function HeroBanner() {
       <div className="container mx-auto px-4 mt-40 md:mt-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-4 mb-auto md:mb-36 lg:pr-8">
+          <div className="space-y-6 mb-auto md:mb-20 lg:pr-8">
             <div className="space-y-2">
               <p
                 className="text-white font-semibold"
@@ -48,7 +48,7 @@ export default function HeroBanner() {
 
             </div>
 
-            <div className="space-y-1 pt-2">
+            <div className="space-y-1">
               <p className="text-[#DCDCDC] text-[15.4px] leading-6 font-medium font-inter">
                 <span className=" text-white">SMART COMPUTING</span> delivers innovative IT and AI-driven solutions
               </p>
@@ -68,7 +68,7 @@ export default function HeroBanner() {
 
             <Button
               onClick={handleContactClick}
-              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] relative hover:opacity-90 text-white z-[999] cursor-pointer px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center gap-2 mt-8"
+              className="bg-gradient-to-r from-[#215EB3] to-[#02B2E8] relative hover:opacity-90 text-white z-[999] cursor-pointer px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 flex items-center gap-4 mt-8"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -85,7 +85,7 @@ export default function HeroBanner() {
           </div>
 
           {/* Right Content - Circuit Image */}
-          <div className="relative flex justify-center lg:justify-end mt-10 items-center">
+          <div className="relative flex justify-center lg:justify-end mt-auto md:mt-20 items-center">
             <div className="relative w-full max-w-[600px]">
               <Image
                 src="/images/circuit.png"

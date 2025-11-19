@@ -2,7 +2,7 @@ import { TrendingUp } from "lucide-react"
 
 export function HowWeWorkSection() {
   return (
-    <section className="relative bg-gray-50 py-20 h-[100vh] px-6 overflow-hidden">
+    <section className="relative py-20 h-[100vh] px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">

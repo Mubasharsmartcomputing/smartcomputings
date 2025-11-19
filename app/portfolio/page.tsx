@@ -110,19 +110,19 @@ export default function Portfolio() {
   const filteredProjects = projects;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative overflow-hidden w-full h-auto py-16 px-4 md:px-8 lg:px-16"
+        className="relative overflow-hidden w-full h-auto py-10 px-4 md:px-8 lg:px-16"
         style={{
           backgroundColor: '#183762',
           borderBottomLeftRadius: '26px',
           borderBottomRightRadius: '26px'
         }}
       >
-        <div className="container mx-auto justify-center items-center mt-12">
+        <div className="container mx-auto justify-center items-center mt-20 ml-14">
           <h1 
-            className="text-transparent text-[35px] md:text-[65px] mb-4 bg-clip-text bg-gradient-to-r from-[#E9F2FA] to-[#74A9D0] align-middle capitalize"
+            className="text-transparent text-[35px] md:text-[50px] mb-2 bg-clip-text bg-gradient-to-r from-[#E9F2FA] to-[#74A9D0] align-middle capitalize"
             style={{
               fontFamily: 'Inter',
               fontWeight: 600,
@@ -151,7 +151,7 @@ export default function Portfolio() {
       {/* Portfolio Grid */}
       <section className="py-20 px-4 md:px-8 lg:px-16">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {filteredProjects.map(project => (
               <PortfolioCard key={project.id} project={project} />
             ))}

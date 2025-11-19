@@ -36,48 +36,7 @@ export default function ServiceCard() {
 
   return (
    <div className="min-h-screen py-8 md:py-16 px-4 relative overflow-hidden" >
-        {/* Background Image - Large screens */}
-        <div 
-          className="absolute hidden xl:block"
-          style={{
-            width: '70vw',
-            height: '100vh',
-            top: '13%',
-            left: '15%',
-            transform: 'rotate(180.4deg)',
-            zIndex: 0,
-          }}
-        >
-          <Image 
-            src="/bg.png" 
-            alt="Background" 
-            layout="fill" 
-            objectFit="cover" 
-            quality={100}
-          />
-        </div>
-        
-        {/* Background Image - Laptop screens */}
-        <div 
-          className="absolute hidden lg:block xl:hidden"
-          style={{
-            width: '80vw',
-            height: '90vh',
-            top: '-2%',
-            left: '10%',
-            transform: 'rotate(180.4deg)',
-            zIndex: 0,
-          }}
-        >
-          <Image 
-            src="/bg.png" 
-            alt="Background" 
-            layout="fill" 
-            objectFit="cover" 
-            quality={100}
-          />
-        </div>
-  
+       
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Header */}
           <div className="text-center mb-8 md:mb-16">
@@ -95,7 +54,7 @@ export default function ServiceCard() {
           </div>
   
           {/* Services Grid - Responsive layout */}
-          <div className="flex flex-col gap-8 md:gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-8 md:gap-10 max-w-6xl mx-auto">
             {services.map((service, index) => {
               return (
                 <div key={index} className="bg-[#183762] rounded-xl md:rounded-2xl p-4 md:p-6 text-white relative flex flex-col md:flex-row md:items-center min-h-[140px] md:min-h-[120px]">
@@ -125,7 +84,7 @@ export default function ServiceCard() {
                     </h3>
   
                     <p 
-                      className="text-gray-300 w-auto ml-[0px] md:ml-20 md:w-[400px] leading-relaxed text-xs md:text-[15.4px]"
+                      className="text-gray-300 w-auto ml-[0px] md:ml-20 md:w-[500px] leading-relaxed text-xs md:text-[15.4px]"
                       style={{
                         fontFamily: 'Inter',
                         fontWeight: 400,

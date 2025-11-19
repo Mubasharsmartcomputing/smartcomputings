@@ -43,11 +43,23 @@ export default function CompanyHighlights() {
   const bottomHighlights = highlights.filter(h => h.position === "bottom");
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-12 lg:py-16">
-   
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold bg-gradient-to-r from-[#215EB3] to-[#02B2E8] text-transparent bg-clip-text text-center mb-8 sm:mb-10 lg:mb-12">
-        Company Highlights
-      </h2>
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-24 lg:py-28">
+
+       <div className="text-center mb-12">
+          <h1 
+            className="text-[55px] font-semibold font-inter leading-[100%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#02B2E8] align-middle"
+            style={{
+              fontFamily: 'Inter',
+              fontWeight: 600,
+              fontSize: '36px',
+              lineHeight: '100%',
+              letterSpacing: '-1.16px'
+            }}
+          >
+            Company Highlights
+          </h1>
+        </div>
+    
 
       {/* Top Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-0 px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10 lg:mb-12">

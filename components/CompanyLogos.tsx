@@ -141,7 +141,7 @@ export default function CompanyLogos() {
          <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Main Headline */}
           <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 text-balance"
             style={{
               fontFamily: 'Inter',
               fontWeight: 600,
@@ -150,13 +150,13 @@ export default function CompanyLogos() {
               letterSpacing: '-1.16px'
             }}
           >
-            <div className="font-semibold font-inter leading-[120%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF] pb-1">Technologies We Manage</div>
+            <div className="font-semibold font-inter leading-[120%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#215EB3] to-[#189EFF]">Technologies We Manage</div>
 
           </h1>
 
           {/* Subheading */}
           <p 
-            className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto text-pretty"
+            className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto text-pretty"
             style={{
               fontFamily: 'Inter',
               fontWeight: 400,

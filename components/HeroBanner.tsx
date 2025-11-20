@@ -25,7 +25,7 @@ export default function HeroBanner() {
       <div className="container mx-auto px-4 mt-40 md:mt-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-6 mb-auto md:mb-20 lg:pr-8">
+          <div className="space-y-8 pt-auto md:pt-20 lg:pt-0 mb:auto md:mb-20 max-w-2xl">
             <div className="space-y-2">
               <p
                 className="text-white font-semibold"
@@ -102,3 +102,4 @@ export default function HeroBanner() {
     </section>
   )
 }
+

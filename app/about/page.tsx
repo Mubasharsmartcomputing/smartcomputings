@@ -14,7 +14,7 @@ export default function About() {
           borderBottomRightRadius: '26px'
         }}
       >
-        <div className="container mx-auto justify-center items-center mt-20 ml-14"> {/* Centering content */}
+        <div className="container mx-auto justify-center items-center mt-20 pl-4"> {/* Centering content */}
           <h1 
             className="text-transparent text-[35px] md:text-[50px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#189EFF] align-middle capitalize"
             style={{

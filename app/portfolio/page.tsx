@@ -120,7 +120,7 @@ export default function Portfolio() {
           borderBottomRightRadius: '26px'
         }}
       >
-        <div className="container mx-auto justify-center items-center mt-20 ml-14">
+        <div className="container mx-auto justify-center items-center mt-20 pl-4">
           <h1 
             className="text-transparent text-[35px] md:text-[50px] mb-2 bg-clip-text bg-gradient-to-r from-[#E9F2FA] to-[#74A9D0] align-middle capitalize"
             style={{
